@@ -33,7 +33,7 @@ LEFT JOIN departments d on d.dept_no = dept_emp.dept_no
 SELECT first_name, last_name, sex
 FROM employees 
 WHERE first_name = 'Hercules' 
-AND last_name LIKE 'B%';
+AND last_name LIKE 'B%'; 
 
 -- 6. List each employee in the Sales department, including their
 -- employee number, last name, and first name.--
@@ -60,4 +60,4 @@ COUNT(last_name) AS "frequency"
 FROM employees
 GROUP BY last_name
 ORDER BY
-COUNT(last_name) DESC;
+COUNT(last_name) desc;
